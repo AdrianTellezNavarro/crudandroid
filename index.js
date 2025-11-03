@@ -96,7 +96,7 @@ app.get('/perfil', (req, res) => {
   }
   res.json({
     usuario: sesionActiva.nombre,
-    sesion_activa: true
+    contrasena: sesionActiva.contrasena
   });
 });
 
